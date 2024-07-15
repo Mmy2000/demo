@@ -1,4 +1,6 @@
-
+:root {
+    --primary: #FFD700;
+}
 /*** Spinner Start ***/
 #spinner {
     opacity: 0;
@@ -34,20 +36,27 @@
 }
 
 .btn.btn-primary {
+    background-color:var(--primary) !important ;
     box-shadow: inset 0 0 0 0 var(--bs-dark);
+    border: var(--primary) !important;
 }
-
+.text-primary{
+    color: var(--primary) !important;
+}
+.bg-primary{
+    background-color: var(--primary) !important;
+}
 .btn.btn-primary:hover {
     box-shadow: inset 200px 0 0 0 var(--bs-dark) !important;
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 .btn.btn-dark {
-    box-shadow: inset 0 0 0 0 var(--bs-primary);
+    box-shadow: inset 0 0 0 0 var(--primary);
 }
 
 .btn.btn-dark:hover {
-    box-shadow: inset 200px 0 0 0 var(--bs-primary);
+    box-shadow: inset 200px 0 0 0 var(--primary);
     color: var(--bs-dark) !important;
 }
 
@@ -118,7 +127,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active  {
-    color: var(--bs-primary);
+    color: var(--primary);
     transition: .5s;
 }
 
@@ -146,7 +155,7 @@
 .dropdown .dropdown-menu a:hover,
 .dropdown .dropdown-menu a.active {
     background: var(--bs-dark);
-    color: var(--bs-primary);
+    color: var(--primary);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
@@ -160,7 +169,7 @@
     background: var(--bs-secondary);
     color: var(--bs-light) !important;
     padding: 5px 12px;
-    border: 2px solid var(--bs-primary) !important;
+    border: 2px solid var(--primary) !important;
 }
 
 /*** Navbar End ***/
@@ -197,7 +206,7 @@
     position: absolute;
     top: 50%;
     left: 0;
-    background: var(--bs-primary);
+    background: var(--primary);
     border-radius: 0 30px 30px 0;
     transition: .5s;
     opacity: 1;
@@ -210,7 +219,7 @@
     position: absolute;
     top: 50%;
     right: 0;
-    background: var(--bs-primary);
+    background: var(--primary);
     border-radius: 30px 0 0 30px;
     transition: .5s;
     opacity: 1;
@@ -221,13 +230,13 @@
     width: 24px;
     height: 24px;
     background: var(--bs-dark);
-    border: 2px solid var(--bs-primary);
+    border: 2px solid var(--primary);
     border-radius: 24px;
     margin: 0 10px 30px 10px;
 }
 
 #carouselId .carousel-indicators li.active {
-    background: var(--bs-primary) !important;
+    background: var(--primary) !important;
 }
 
 @media (max-width: 768px) {
@@ -283,7 +292,7 @@
     content: "";
     width: 100%;
     height: 60%;
-    background: var(--bs-primary);
+    background: var(--primary);
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -368,7 +377,7 @@
     height: 100%;
     margin-top: -50%;
     margin-left: -50%;
-    background: var(--bs-primary);
+    background: var(--primary);
     color: var(--bs-dark);
     
 } 
@@ -418,7 +427,7 @@
     content: "";
     width: 100%;
     height: 60%;
-    background: var(--bs-primary);
+    background: var(--primary);
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -476,7 +485,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0deg);
-    background: var(--bs-primary);
+    background: var(--primary);
     color: var(--bs-dark) !important;
     opacity: 1;
 
@@ -499,7 +508,7 @@
     position: absolute;
     width: 80px;
     height: 50px;
-    background: var(--bs-primary);
+    background: var(--primary);
     top: -51px;
     left: 0;
     border: 0;
@@ -513,7 +522,7 @@
 
 .blog-carousel .owl-nav .owl-prev:hover {
     box-shadow: inset 200px 0 0 0 var(--bs-dark);
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 .blog-carousel .owl-prev,
@@ -528,7 +537,7 @@
     position: absolute;
     width: 80px;
     height: 50px;
-    background: var(--bs-primary);
+    background: var(--primary);
     top: -51px;
     right: 0;
     border-radius: 30px 10px 10px 30px;
@@ -541,7 +550,7 @@
 
 .blog-carousel .owl-nav .owl-next:hover {
     box-shadow: inset 200px 0 0 0 #000000;
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 /*** Blog End ***/
@@ -627,7 +636,7 @@
 
 .team-item:hover .team-content {
     box-shadow: inset 550px 0 0 0 var(--bs-dark);
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 /*** Team End ***/
 
@@ -666,7 +675,7 @@
     position: absolute;
     width: 60px;
     height: 40px;
-    background: var(--bs-primary);
+    background: var(--primary);
     color: var(--bs-dark);
     font-size: 22px;
     top: 14%;
@@ -678,7 +687,7 @@
 
 .testimonial-carousel .owl-nav .owl-prev:hover {
     box-shadow: inset 200px 0 0 0 var(--bs-dark);
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 .testimonial-carousel .owl-nav .owl-next {
@@ -689,7 +698,7 @@
 
 .testimonial-carousel .owl-nav .owl-next:hover {
     box-shadow: inset 200px 0 0 0 var(--bs-dark);
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 .testimonial-carousel .owl-dots {
@@ -712,7 +721,7 @@
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: var(--bs-primary);
+    background: var(--primary);
 }
 
 /*** testimonial End ***/
@@ -728,7 +737,7 @@
 .contact-link a i:hover,
 .contact-link a h5:hover,
 .contact-link a.h5:hover {
-    color: var(--bs-primary) !important;
+    color: var(--primary) !important;
 }
 
 /*** Contact End ***/
@@ -736,7 +745,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(../img/5.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.9)), url(../img/5.jpg) center center no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, .7);
     margin-top: 6rem;
